@@ -1,0 +1,11 @@
+<ul>
+  {% for url, name in album_paths|dictsort|reverse %}
+  <li>
+    <a href="{{ url }}">{{ name }}</a>
+  </li>
+  {% endfor %}
+</ul>
+
+{% for url, name in thumbnail_paths|dictsort %}
+<a href="{{ url }}"><img src="{{ url }}?thumbnail=1" title="{{ name }}"/></a>
+{% endfor %}
