@@ -17,6 +17,7 @@ setup(
     long_description=long_description,
     url='https://github.com/sycdan/shutterpy',
     author='sycdan',
+    zip_safe=False,
     packages=['shutterpy'],
     py_modules=['shutterpy'],
     entry_points={'console_scripts': ['shutterpy=shutterpy.__main__:run'], },
